@@ -1,0 +1,73 @@
+.myBody {
+      width: 80%;
+      border: 1px solid grey;
+      background: #cfd;
+      margin: 0 auto;
+      padding: 0;
+    }
+    .hidden {
+      display: none;
+    }
+    .title{
+      padding: 10px 0;
+      margin: 0;
+      text-align: center;
+      /* width: 100%; */
+    }
+    .formWrapper{
+      display: flex;
+      margin: 0 auto;
+      justify-content: center;
+      padding: 15px;
+    }
+    .welcomWrapper{
+      margin: 0 auto; 
+      padding: 15px;
+    }
+    .adminWrapper{
+      margin: 0 auto; 
+      padding: 15px; 
+    }
+    .welcomText{
+      white-space: pre;
+      margin: 0;
+      padding:0;
+      margin: 0;
+    }
+    .chat{
+      margin: 5px 0 0 0;
+      padding: 0;
+      color: #00F;
+      /* font-weight: bold; */
+    }
+    .activeUserName{
+      padding: 0;
+      margin: 0;
+      font-weight: 100;
+    }
+    .sentMessage{
+      background: #ffd;
+      width: 100%;
+      min-height: 1.2em;
+      margin: 0;
+      margin-top: 5px;
+      padding: 2px;
+      border: 1px solid grey;
+    }
+    .userMessageBox{
+      width: 80%;
+      box-sizing: border-box;
+      margin-right: 10px;
+    }
+    .userMessageBtn{
+      width: calc(20% - 10px);
+      box-sizing: border-box;
+    }
+    #activeUsers{
+      padding: 0;      
+    }
+    .activeUser{
+      list-style: none;
+      margin-bottom: 10px;
+    }
+    
