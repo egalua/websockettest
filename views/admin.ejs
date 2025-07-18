@@ -1,0 +1,22 @@
+<%- include('header') %>
+  <main class = 'myBody' id="welcomeAdmin">
+    <h1 class="hidden">Админ</h1>  
+    <div class="adminWrapper">
+      <h3 class="title">Список активных пользователей</h3>
+      <form id="adminForm">
+        <ul id="activeUsers">
+          <% for(let i=0; i<users.length; i++){ %>
+            <li class="activeUser">
+              <h4 class="activeUserName"><%= users[i].name+' '+users[i].surname %></h4>
+              <input type="text" class="userMessageBox" id=<%=users[i].id %>>
+              <button class="userMessageBtn" data-user-id=<%=users[i].id %>>Отправить</button>
+              <p class="sentMessage"></p>
+            </li>
+          <% } %>
+        </ul>
+      </form>
+    </div>
+    
+  </main>
+  <script> const port = <%= serverPort %> </script>
+<%- include('footer') %>

@@ -1,0 +1,13 @@
+<%- include('header') %>
+  <main class = 'myBody' id="welcomeUser">
+    <h1 class="hidden">Стартовая форма</h1>  
+    <h3 class="title">Приветствую <%= name %></h3>
+
+    <div class="welcomWrapper">
+      <p class="welcomText">Админ спит, но скоро проснётся и напишет ...</p>
+      <p class="chat"></p>
+    </div>
+    
+  </main>
+  <script> const port = <%= serverPort %> </script>
+<%- include('footer') %>
